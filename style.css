@@ -1,0 +1,89 @@
+body {
+    background-image: url('./img/back.jpg');
+    background-size: cover;
+}
+
+.active {
+    background-color: #ccc;
+}
+
+.game-container{
+    width: 1000px;
+    background-color: #ffff;
+    margin-top: 2rem;
+}
+
+.player-name {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.global-score {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 1rem;
+    color: #ea2e24;
+}
+.player-currentScore-box {
+    background-color: #ea2e24;
+    text-align: center;
+    padding: 20px 0;
+    margin: 5rem 10rem;
+    text-transform: uppercase;
+}
+.current-score{
+    color: #ffffff;
+    font-size: 30px;
+}
+button {
+    position: absolute;
+    left: 45%;
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+.dice{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 250px;
+        transform: translateX;
+        left: 46%;
+        box-shadow: 10px 10px 10px #d0c9c9;
+}
+i{
+    color: #ea2e24;
+    padding-right: 10px;
+}
+
+.new-btn{
+ top: 85px;
+}
+.roll-btn{
+    top: 390px;
+}
+.hold-btn{
+    top: 450px;
+}
+
+.active .player-name{
+    font-weight: 900;
+}
+.active .player-name::after{
+    content: "\2022";
+    color: red;
+}
+
+.new-btn:hover, .roll-btn:hover, .hold-btn:hover{
+    color: red;
+}
+
+.winner {
+    background-color: greenyellow;
+}
+.winner .player-name{
+    font-size: 45px;
+    color: red;
+}
